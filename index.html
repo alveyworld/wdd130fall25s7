@@ -14,11 +14,7 @@
             <img src="images/logo.png" alt="My logo">
             <h1>Brother Alvey Portal</h1>
         </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="wwr/index.html">WWR</a>
-            <a href="#">ICE</a>
-            <a href="#">Project</a>
+        <nav id="nav">   
         </nav>
         <main>
             <section class="col_left">
@@ -124,5 +120,15 @@
 
     </div>
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav").innerHTML = data;
+            })
+    });
+</script>
 
 </html>
