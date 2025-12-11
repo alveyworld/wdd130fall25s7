@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: gray;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            letter-spacing: 0.05rem;
+            text-transform: uppercase;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 400;
+        }
+        main {
+            display: grid;
+            grid-template-columns: .1fr .1fr 1fr .1fr;
+            margin-top: 20px;
+        }
+        hr {
+            width: 100%;
+            grid-column: 1 / 5;
+        }
+        h2 {
+            grid-column: 2/3;
+        }
+
+        #blue {
+            background: blue;
+            grid-column: 1 / 2;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        #white {
+            background: white;
+            grid-column: 2 / 4;
+        }
+
+        #red {
+            background: red;
+            grid-column: 1 / 4;
+        }
+
+        #chile {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;
+        }
+
+        .star {
+            width: 70px;
+            aspect-ratio: 1;
+            background: white;
+            clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+        }
+
+        #canada {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            width: 300px;
+            height: 200px;
+        }
+        .r {
+            background: red;
+        }
+        #w {
+            background: white;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+        #leaf {
+            width: 90%;
+            aspect-ratio: 1;
+            background: red;
+            clip-path: polygon(11.76% 35.58%, 15.68% 47.33%, 15.78% 48.50%, 14.09% 49.79%, 10.59% 51.28%, 10.59% 51.82%, 30.83% 68.27%, 30.93% 69.23%, 28.39% 76.18%, 29.34% 76.39%, 46.72% 73.18%, 47.67% 73.18%, 48.62% 73.72%, 48.94% 74.47%, 48.94% 77.35%, 48.09% 90.60%, 48.20% 93.70%, 52.12% 93.70%, 52.33% 93.38%, 51.38% 77.46%, 51.48% 74.15%, 52.75% 73.18%, 53.60% 73.18%, 71.72% 76.39%, 71.82% 75.53%, 69.49% 69.34%, 69.60% 68.27%, 89.83% 51.60%, 89.62% 51.18%, 85.17% 49.15%, 84.64% 48.50%, 86.23% 42.63%, 88.56% 36.00%, 88.35% 35.15%, 83.90% 36.32%, 76.27% 37.71%, 75.64% 37.29%, 75.21% 36.43%, 73.52% 31.94%, 72.78% 31.73%, 63.77% 41.56%, 62.29% 41.35%, 62.08% 40.17%, 66.10% 19.55%, 66.21% 17.74%, 65.36% 17.84%, 59.00% 21.69%, 57.73% 21.58%, 50.32% 7.16%, 49.58% 7.59%, 42.58% 21.58%, 41.42% 21.69%, 34.85% 17.74%, 34.22% 17.63%, 34.00% 17.95%, 38.35% 39.96%, 38.35% 40.92%, 37.92% 41.56%, 36.65% 41.56%, 27.44% 31.62%, 26.69% 32.26%, 25.00% 36.75%, 24.05% 37.71%, 13.03% 35.36%, 11.97% 35.26%, 11.76% 35.58%)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Using CSS Grid to make Country Flags</h1>
+    </header>
+    <main>
+        <h2>Chile</h2>
+        <div id="chile">
+            <div id="blue">
+                <div class="star"></div>
+            </div>
+            <div id="white"></div>
+            <div id="red"></div>
+        </div>
+        <hr>
+
+        <h2>Denmark</h2>
+        <div id="denmark">
+            <div id="dred1"></div>
+            <div id="dred2"></div>
+            <div id="dred3"></div>
+            <div id="dred4"></div>
+        </div>
+        <hr>
+
+        <h2>Finland</h2>
+        <div id="finland">
+            <div id="fwhite1"></div>
+            <div id="fwhite2"></div>
+            <div id="fwhite3"></div>
+            <div id="fwhite4"></div>
+        </div>
+        <hr>
+
+        <h2>Benin</h2>
+        <div id="benin">
+            <div id="bgreen"></div>
+            <div id="byellow"></div>
+            <div id="bred"></div>
+        </div>
+        <hr>
+
+        <h2>Canada</h2>
+        <div id="canada">
+            <div class="r"></div>
+            <div id="w">
+                <div id="leaf"></div>
+            </div>
+            <div class="r"></div>
+        </div>
+        <hr>
+    </main>
+</body>
+
+</html>
